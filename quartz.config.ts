@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "blogs", 
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -83,6 +83,7 @@ const config: QuartzConfig = {
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
+        rssLimit: 20, // 增加 RSS 条目数量
       }),
       Plugin.Assets(),
       Plugin.Static(),
