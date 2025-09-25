@@ -374,12 +374,10 @@ V(s){\leftarrow\mathrm{max}_{a\in A}}\left(R(s,a)+\gamma\sum_{s^{\prime}\in S}p\
 $$
 ### 价值迭代算法
 1. 初始化: $k=0$ , 对于所有状态 $s$ , $V_0(s)=0$
-2. 从 $k=1$ 至 $H$ (收敛所需迭代次数)
-	1. 对于所有状态 $s$ 
+2. 从 $k=1$ 至 $H$ (收敛所需迭代次数),对于所有状态 $s$ 
 $$
 \begin{array}{c}{{Q_{k+1}(s,a)=R(s,a)+\gamma\sum_{s^{\prime}\in{\cal S}}p\left(s^{\prime}\mid s,a\right)V_{k}\left(s^{\prime}\right)}}\\ {{V_{k+1}(s)=\operatorname*{max}Q_{k+1}(s,a)}}\end{array}
 $$
-	2. $k\leftarrow k+1$
 3. 迭代完成后 , 取最优策略
 $$
 \pi(s)=\arg\operatorname*{max}_a[R(s,a)+\gamma\sum_{s^{\prime}\in S}p(s^{\prime}\mid s,a)V_{H+1}(s^{\prime})]
