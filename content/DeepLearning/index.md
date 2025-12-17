@@ -1,8 +1,8 @@
----
-title: DeepLearning
-draft: false
-publish: true
----
-# DeepLearning
+---  
+title: DeepLearning  
+draft: false  
+publish: true  
+---  
+# DeepLearning  
 
-d2l.ai
+d2l.ai  
